@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskRabbit</title>
+</head>
+<style>
+    .Heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    .box{
+        height:50vh;
+        width:50vw;
+        background-color: aqua;
+       align-items: center;
+       margin-left:25vw;
+       margin-top: 10vw;
+    }
+    .heading{
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+
+    }
+    .inputs{
+        padding: 4vw;
+    }
+    .submit{
+        align-items: center;
+    }
+    
+</style>
+<body>
+    <div class="box">
+        <p class="heading">User-Registration</p>
+        <div class="inputs">
+       
+       <p>User-name:<input type="text" id="username"></input></p>
+       <p>Password:<input type="password" id="password"></input></p>
+       <button onclick="func()">Sign-In</button>
+    </div>
+    </div> 
+
+    <script>
+        function func(){
+     const username=document.getElementById('username').value;
+     const password=document.getElementById('password').value;
+     if(username==='myusername' && password==='mypassword'){
+        let newloc="Home.html";
+           window.location.replace(newloc);
+     }
+     else{
+        document.write("Login unsuccessful");
+     }
+    }
+    </script> 
+</body>
+
+</html>
